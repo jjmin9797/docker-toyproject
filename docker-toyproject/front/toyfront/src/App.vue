@@ -1,26 +1,30 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+<br>
+<div class="container mt-2">
+  <h2>사용자 추가</h2>
+  <form action="/action_page.php">
+    <div class="form-group">
+      <label for="email">User Name : </label>
+      <input type="text" class="form-control" placeholder="Enter User Name">
+    </div>
+    <div class="form-group">
+      <label for="pwd">User Age</label>
+      <input type="text" class="form-control"  placeholder="Enter Age">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+
 
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
+
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>
